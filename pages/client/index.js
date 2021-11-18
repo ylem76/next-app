@@ -11,8 +11,8 @@ export default function ClientIndex() {
       <ul>
         {clients.map((client) => {
           return <li key={client.id}><Link href={{
-            pathname:"/client/[id]",
-            query : {id: client.name}
+            pathname:"/client/[clientid]",
+            query : {clientid: client.name}
           }}>{client.name}</Link></li>
         })}
       </ul>
